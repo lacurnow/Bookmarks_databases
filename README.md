@@ -1,8 +1,12 @@
-> As a user,
-> So that I can view my bookmarks,
+#Bookmark Manager Web App
+Learning how to integrate databases into web apps for data persistence.
+
+## User Stories
+> As a user
+> So that I can view my bookmarks
 > I want to see them listed on the page.
 
-![Domain Model](domain_model.png)
+![Domain Model](bookmarks_domain_model_v2.png)
 
 ## Setting up the database:
 1. Connect to ```psql```.
