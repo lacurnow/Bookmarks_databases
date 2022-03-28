@@ -11,7 +11,12 @@ class BookmarkManager < Sinatra::Base
   end
 
   get '/bookmarks' do
-    "Bookmark Viewer"
+    @bookmarks = [
+      "http://www.google.com",
+      "http://www.facebook.com",
+      "http://www.twitter.com",
+    ]
+    erb :bookmarks
   end
 
   run! if app_file == $0
