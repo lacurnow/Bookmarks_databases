@@ -7,7 +7,7 @@ class BookmarkManager < Sinatra::Base
   end
 
   get '/' do
-    'Hello World'
+    'Bookmark Viewer'
   end
 
   run! if app_file == $0
