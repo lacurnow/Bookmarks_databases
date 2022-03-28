@@ -1,4 +1,5 @@
 class BookmarkList
+
   def initialize
     @bookmarks = []
   end
