@@ -1,6 +1,7 @@
 require 'sinatra/base'
 require 'sinatra/reloader'
 require './lib/bookmark_list'
+require './lib/bookmark_list'
 
 class BookmarkManager < Sinatra::Base
   configure :development do
@@ -22,8 +23,7 @@ class BookmarkManager < Sinatra::Base
 
   post '/bookmarks' do
     url = params['url']
-    connection = PG.connect(dbname: 'bookmark_manager_test')
-    connection.exec("INSERT INTO bookmarks (url) VALUES('#{url}');")
+    BookmarkList.add(url)
     redirect '/bookmarks'
   end
 

@@ -18,4 +18,11 @@ RSpec.describe BookmarkList do
     expect(new_bookmarklist).to include 'http://www.facebook.com'
     expect(new_bookmarklist).to include 'http://www.twitter.com'
   end
+
+  describe '.add' do
+    it 'adds a new bookmark to the list' do
+      BookmarkList.add('http://www.test-url.com')
+      expect(BookmarkList.all).to include 'http://www.test-url.com'
+    end
+  end
 end
