@@ -6,7 +6,11 @@ Learning how to integrate databases into web apps for data persistence.
 > So that I can view my bookmarks
 > I want to see them listed on the page.
 
-![Domain Model](bookmarks_domain_model_v2.png)
+![Domain Model](bookmarks_domain_model_v3.png)
+
+> As a user
+> So that I can keep track of new bookmarks
+> I want to be able to add bookmarks to my bookmark list.
 
 ## Setting up the database:
 1. Connect to ```psql```.
