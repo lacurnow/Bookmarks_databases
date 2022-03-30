@@ -23,3 +23,9 @@ Learning how to integrate databases into web apps for data persistence.
 2. Create database through ```psql``` command ```CREATE DATABASE bookmark_manager_test;```
 3. Connect to database using ```psql``` command ```\c bookmark_manager_test;```
 4. Run the query saved in ```02_create_bookmarks_table_test.sql```
+
+## Adding the title column to the bookmarks table
+1. Connect to ```psql```.
+2. Connect to database using ```psql``` command ```\c bookmark_manager;```
+3. Run query saved in ```03_add_title_col_to_bookmarks_table.sql```
+N.B. also do this for bookmark_manager_test table, too.

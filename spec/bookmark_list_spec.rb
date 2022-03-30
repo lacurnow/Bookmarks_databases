@@ -14,7 +14,6 @@ RSpec.describe BookmarkList do
     BookmarkList.add(url: "http://www.twitter.com", title: 'Twitter')
 
     new_bookmarklist = BookmarkList.all
-    
     expect(new_bookmarklist.length).to eq 3
     expect(new_bookmarklist.first).to be_a Bookmark 
     #Bookmark instance

@@ -1,9 +1,9 @@
 <h1> List of bookmarks </h1>
 <ul>
-  <% @new_bookmarklist.each do |bookmark|%>
+  <% @new_bookmarklist.each do |bookmark| %>
   <li>
-    <a href= "<%=bookmark.url%>">
-      <%=bookmark.title%>
+    <a href= "<%= p bookmark.url %>">
+      <p><%= p bookmark.title %></p>
     </a>
   </li>
   <% end %>
