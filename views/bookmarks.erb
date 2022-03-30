@@ -1,6 +1,10 @@
 <h1> List of bookmarks </h1>
 <ul>
-  <%@new_bookmarklist.each do |bookmark|%>
-  <li> <%=bookmark%> </li>
-  <%end%>
+  <% @new_bookmarklist.each do |bookmark|%>
+  <li>
+    <a href= "<%=bookmark.url%>">
+      <%=bookmark.title%>
+    </a>
+  </li>
+  <% end %>
 </ul>
