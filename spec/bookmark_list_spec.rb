@@ -29,4 +29,12 @@ RSpec.describe BookmarkList do
       expect(list.title).to eq 'Test Title'
     end
   end
+
+  describe '.delete' do
+    it 'deletes the specified bookmark from the list' do
+      bookmark = BookmarkList.add(url: 'http://www.test-url.com', title: 'Test Title')
+      BookmarkList.delete(id: bookmark.id)
+      expect(BookmarkList.all.length).to eq 0
+    end
+  end
 end
